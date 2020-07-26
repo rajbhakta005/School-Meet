@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/aboutus"
+            android:title="हमारे बारे में" />
+
+        <item
+            android:id="@+id/nav_add_leap_member"
+            android:icon="@drawable/addmem"
+            android:title="लीप सदस्य जोड़ें" />
+
+        <item
+            android:id="@+id/nav_digital_id"
+            android:icon="@drawable/digitalid"
+            android:title="डिजिटल आईडी" />
+
+        <item
+            android:id="@+id/nav_leap_verify"
+            android:icon="@drawable/approvenew"
+            android:title="लीप खातों को सत्यापित करें" />
+
+
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/rupeesymbol"
+            android:title="फंड दान करें" />
+
+        <item
+            android:id="@+id/nav_fee_payment"
+            android:icon="@drawable/paysymbol"
+            android:title="सदस्यता शुल्क भुगतान" />
+
+        <item
+            android:id="@+id/nav_referral"
+            android:icon="@drawable/referralicon"
+            android:title="रेफरल खाते" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="सेटिंग्स" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logoutlogo"
+            android:title="बाहर निकले" />
+    </group>
+
+
+</menu>

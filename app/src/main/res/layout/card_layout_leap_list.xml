@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/list_member_image"
+            android:layout_width="70dp"
+            android:scaleType="centerCrop"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaibhav Bhardwaj"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/list_member_image"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/list_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/list_name"
+            android:layout_toRightOf="@+id/list_member_image"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/list_mobile"
+            android:layout_toRightOf="@+id/list_member_image"
+            android:layout_marginTop="5dp"/>
+
+
+        <ImageView
+            android:contentDescription="WhatsappLogo"
+            android:id="@+id/list_whatsapp"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/whatsapp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

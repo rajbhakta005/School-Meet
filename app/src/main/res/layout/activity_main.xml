@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgnew">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:theme="@style/productfont"
+          android:text="@string/welcome_to"
+          android:textColor="#fff"
+          android:textSize="20sp"
+          android:layout_centerInParent="true"
+          android:id="@+id/welcome_to_text" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:theme="@style/productfont"
+           android:text="अलख"
+           android:textSize="60sp"
+           android:layout_marginTop="20dp"
+           android:textColor="#fff"
+           android:layout_above="@+id/welcome_to_text"
+           android:layout_centerHorizontal="true" />
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/login_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_above="@+id/registerHomeTV"
+    app:cardCornerRadius="40dp"
+    android:theme="@style/productfont"
+    app:cardBackgroundColor="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#02001a"
+        android:backgroundTint="#fff"
+        android:textColor="#02001a"
+        android:maxLength="8"
+        android:inputType="textCapCharacters"
+        android:lines="1"
+        android:textSize="18sp"
+        android:id="@+id/login_edit_text"
+        android:hint="@string/enter_membership_id"/>
+
+        <ImageButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:theme="@style/productfont"
+            android:src="@drawable/next"
+            android:background="@drawable/roundedcorner"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/registerHomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/forgot_membership_id_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="21sp"
+        android:text="पंजीकरण नहीं किया? यहां रजिस्टर करें"/>
+
+    <TextView
+        android:id="@+id/forgot_membership_id_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_membership_id"
+        android:theme="@style/productfont"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+

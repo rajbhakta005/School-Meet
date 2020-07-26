@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="4dp"
+    android:background="#fff"
+    app:cardBackgroundColor="#fff"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/leap_member_image"
+            android:layout_width="70dp"
+            android:scaleType="centerCrop"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/leap_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaibhav Bhardwaj"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/leap_member_image"
+            android:layout_marginTop="18dp"/>
+
+
+        <TextView
+            android:id="@+id/leap_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/leap_name"
+            android:layout_toRightOf="@+id/leap_member_image"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/leap_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/leap_mobile"
+            android:layout_toRightOf="@+id/leap_member_image"
+            android:layout_marginTop="5dp"/>
+
+
+            <Button
+                android:id="@+id/leap_accept"
+                android:layout_width="100dp"
+                android:text="स्वीकार करें"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/border_button"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/leap_verify_progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

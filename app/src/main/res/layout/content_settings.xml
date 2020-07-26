@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Settings"
+    tools:showIn="@layout/activity_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/settings_notification"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/pref_title_new_message_notifications"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/change_profile_image_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="अपनी प्रोफाइल फ़ोटो बदलें"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

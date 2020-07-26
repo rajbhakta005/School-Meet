@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "561032133934",
+    "firebase_url": "https://alakh-82bd8.firebaseio.com",
+    "project_id": "alakh-82bd8",
+    "storage_bucket": "alakh-82bd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561032133934:android:d9ddd4d2789180c3990ebf",
+        "android_client_info": {
+          "package_name": "com.vaibhav.alakh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561032133934-cj1kcl73opivcf33jl2akdsncts21u9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vaibhav.alakh",
+            "certificate_hash": "9f18f27a5eb3eb361c9d62ef5cf17cf58ecbef95"
+          }
+        },
+        {
+          "client_id": "561032133934-0rhbdfr3suh73serdmma2mdcv8f6ddp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtGJuUBAVI-Y53gAMRKFQ9ENDmDRajac4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561032133934-0rhbdfr3suh73serdmma2mdcv8f6ddp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

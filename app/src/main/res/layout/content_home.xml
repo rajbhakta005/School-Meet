@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_coordinator_layout"
+    tools:showIn="@layout/app_bar_home"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#fff">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/homeSL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/shimmer_home"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/homeLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/home_profile_image_view"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/loadinground"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:id="@+id/name_tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:theme="@style/productfont"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/add_member_card"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#263238">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:textColor="#fff"
+                                android:padding="5dp"
+                                android:theme="@style/productfont"
+                                android:text="सदस्य जोडें"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+
+                        android:id="@+id/home_pgp_card"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#263238">
+
+                            <TextView
+                                android:id="@+id/home_pgp_card_TV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:text="वीडियो"
+                                android:padding="5dp"
+                                android:textColor="#fff"
+                                android:theme="@style/productfont" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/home_pgp_card2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:padding="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#263238">
+
+                            <TextView
+                                android:id="@+id/home_pgp_card_TV2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="पीपल्स ग्रीन"
+                                android:textSize="25sp"
+                                android:padding="5dp"
+                                android:textColor="#fff"
+                                android:theme="@style/productfont" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/home_pgp_card3"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginRight="20dp"
+                        android:padding="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#263238">
+
+                            <TextView
+                                android:id="@+id/home_pgp_card_TV3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="लीप"
+                                android:padding="5dp"
+                                android:textSize="25sp"
+                                android:textColor="#fff"
+                                android:theme="@style/productfont" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+
+
+                    <!--<androidx.cardview.widget.CardView-->
+                        <!--android:id="@+id/home_second_card"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:padding="5dp"-->
+                        <!--app:cardCornerRadius="10dp"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:background="#263238">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/home_second_card_TV"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="श्रमिक"-->
+                                <!--android:padding="5dp"-->
+                                <!--android:textSize="25sp"-->
+                                <!--android:textColor="#fff" />-->
+
+                        <!--</RelativeLayout>-->
+                    <!--</androidx.cardview.widget.CardView>-->
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/home_third_card"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        app:cardCornerRadius="10dp"
+                        android:padding="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingBottom="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#128c7e">
+
+                            <TextView
+                                android:id="@+id/home_third_card_TV"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="संपर्क"
+                                android:padding="5dp"
+                                android:textSize="25sp"
+                                android:textColor="#fff" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_payment_alert_shimmer"
+                    app:repeat_count="40"
+                    android:visibility="gone">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/home_payment_alert_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="#660000">
+
+                        <TextView
+                            android:id="@+id/home_payment_alertTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="कृपया डिजिटल आईडी और अन्य सुविधाओं तक पहुँचने के लिए अपनी सदस्यता शुल्क का भुगतान करें"
+                            android:padding="5dp"
+                            android:textSize="20sp"
+                            android:textColor="#fff" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

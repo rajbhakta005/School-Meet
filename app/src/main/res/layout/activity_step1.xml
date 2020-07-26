@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    tools:context=".Step1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:contentDescription="Just an Image"
+            android:id="@+id/backbg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#02001a"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/step1_back_button_image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/backicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="आइये, एक बदलाव की अलख जगाये।"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:theme="@style/productfont"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backbg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="4dp"
+            android:id="@+id/step1_mobile_card_view"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/mobile_text_hindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#02001a"
+                    android:text="आपका मोबाइल नंबर सत्यापित करें - "
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/productfont"
+                    android:layout_below="@+id/backbg"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="मोबाइल नम्बर"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/mobilecolor"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary">
+
+                    <EditText
+                        android:id="@+id/mobile_number_step1_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:theme="@style/productfont"
+                        android:inputType="number"
+                        android:textSize="22sp"
+                        android:maxLength="10"
+                        android:hint="@string/enter_your_mobile_number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/step1_send_otp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:text="OTP भेजें"
+            android:background="@drawable/roundedless"
+            android:layout_below="@id/step1_mobile_card_view"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:theme="@style/productfont"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/step1_verify_otp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/next"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:text="OTP सत्यापित करें"
+            android:background="@drawable/roundedless"
+            android:layout_below="@id/step1_otp_card_view"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:theme="@style/productfont"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/step1_please_wait_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="कृपया प्रतीक्षा करें"
+            android:layout_below="@+id/step1_otp_card_view"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/step1_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02:00"
+            android:layout_below="@+id/step1_please_wait_text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/step1_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="पुनः OTP भेजें"
+            android:layout_below="@+id/step1_otp_card_view"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/step1_mobile_card_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardElevation="4dp"
+            android:id="@+id/step1_otp_card_view"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/otp_text_hindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#02001a"
+                    android:text="अपना ओटीपी दर्ज करें - "
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    android:theme="@style/productfont"
+                    android:layout_below="@+id/backbg"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/otpcolor"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColorHint="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary">
+
+                        <EditText
+                            android:id="@+id/otp_step1_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:theme="@style/productfont"
+                            android:inputType="number"
+                            android:textSize="22sp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:maxLength="6"
+                            android:hint="अपना ओटीपी दर्ज करें"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

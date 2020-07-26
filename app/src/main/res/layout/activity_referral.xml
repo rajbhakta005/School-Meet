@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Referral"
+    android:background="@drawable/referralbg">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/backicon"
+    android:layout_marginTop="30dp"
+    android:id="@+id/referral_backImage"
+    android:layout_marginLeft="20dp"/>
+
+
+            <TextView
+                android:id="@+id/referral_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="आपके द्वारा बनाए गए अलख खाते"
+                android:textColor="@color/white"
+                android:layout_below="@+id/referral_backImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:textSize="30sp"/>
+
+
+            <TextView
+                android:id="@+id/referral_number_TV_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@+id/referral_text1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textSize="150sp"/>
+
+
+            <TextView
+                android:id="@+id/referral_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="पैसे निकालने के लिए न्यूनतम 20 रेफरल खातों की जरूरत है"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10sp"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/referral_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="कुल बैलेंस उपलब्ध"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/referral_text2"
+                android:layout_centerHorizontal="true"
+                android:textColor="#006400"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20sp"
+
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/referral_amount_TV_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/referral_text3"
+                android:layout_centerHorizontal="true"
+                android:textColor="#006400"
+                android:layout_marginTop="10sp"
+                android:textSize="40sp"/>
+
+</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

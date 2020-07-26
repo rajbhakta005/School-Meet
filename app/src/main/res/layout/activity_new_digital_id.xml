@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDigitalID"
+    android:background="#e9e9e9">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+       <TextView
+           android:id="@+id/digital_heading"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="अलख डिजिटल आईडी"
+           android:textColor="@color/colorPrimary"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="40dp"
+           android:textSize="30sp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/back_button_digital_id"
+            android:src="@drawable/left"/>
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/digital_id_card_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#fff"
+            android:paddingBottom="20dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/digital_pgp_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/pgp"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/digital_member_image_new"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/namecolor"
+                    android:elevation="2dp"
+                    android:contentDescription="Member Image"
+                    android:padding="5dp"
+                    android:layout_below="@+id/digital_pgp_logo"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/digital_name_text_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#154360  "
+                android:theme="@style/productfont"
+                android:layout_below="@+id/digital_member_image_new"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                style="@style/productfont"
+                android:textSize="30sp"/>
+
+
+                <TextView
+                    android:id="@+id/digital_membership_text_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#154360"
+                    android:theme="@style/productfont"
+                    android:text=""
+                    android:layout_below="@+id/digital_name_text_new"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    style="@style/productfont"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/digital_alakh_text_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#154360"
+                    android:theme="@style/productfont"
+                    android:text="(Alakh Member &amp; Whistle Blower)"
+                    android:layout_below="@+id/digital_membership_text_new"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    style="@style/productfont"
+                    android:textSize="22sp"/>
+
+                <TextView
+                    android:id="@+id/digital_mobile_text_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#154360"
+                    android:theme="@style/productfont"
+                    android:text=""
+                    android:layout_marginBottom="40dp"
+                    android:layout_below="@+id/digital_alakh_text_new"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    style="@style/productfont"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">Alakh</string>
+    <string name="title_activity_home">"PGP"</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_membership_id">सदस्यता आईडी दर्ज करें</string>
+    <string name="welcome_to">में स्वागत</string>
+    <string name="pgp">पीजीपी</string>
+    <string name="title_activity_digital_id">डिजिटल आईडी</string>
+    <string name="title_activity_select_picture">चित्र का चयन करें</string>
+    <string name="title_activity_add_member">सदस्य जोड़ें</string>
+    <string name="pgp_digital_id">पीजीपी डिजिटल आईडी</string>
+    <string name="forgot_membership_id">सदस्यता आईडी भूल गए</string>
+    <string name="title_activity_forgot_id">सदस्यता आईडी पुनर्प्राप्त करें</string>
+    <string name="enter_your_mobile_number">मोबाइल नंबर दर्ज करें</string>
+    <string name="fetch_membership_id">सदस्यता आईडी प्राप्त करें</string>
+    <string name="please_note_your_membership_id_will_be_sent_as_sms_on_your_registered_mobile_number">कृपया ध्यान दें:\n\nआपकी सदस्यता आईडी आपके पंजीकृत मोबाइल नंबर पर एसएमएस के रूप में भेजी जाएगी।</string>
+    <string name="title_activity_pgpdetail">PGP Prakoshths</string>
+    <string name="title_activity_pgpyuva_entrepreneur">PGP Yuva Entrepreneur Cell</string>
+    <string name="title_activity_pgpnaya_kisaan">PGP Naya Kisaan</string>
+    <string name="title_activity_pgpaccha_jeevan">PGP Accha Jeevan Adhikaar</string>
+    <string name="title_activity_pgplaxman_rekha">PGP Laxman Rekha Cell</string>
+    <string name="title_activity_about_us">अलख के बारे में</string>
+    <string name="title_activity_posts">Alakh Posts</string>
+    <string name="title_activity_post_details">Post Details</string>
+    <string name="title_activity_donate_funds">दान करे</string>
+    <string name="title_activity_settings">सेटिंग्स</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">सूचनाएं</string>
+
+    <string name="pref_title_new_message_notifications">नई पोस्ट सूचनाएं दिखाएं</string>
+
+    <string name="pref_title_ringtone">रिंगटोन</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">कंपन</string>
+
+
+    <string-array name="lok_sabha">
+        <item>अपने लोक सभा क्षेत्र का चयन करें</item>
+        <item>Ajmer</item>
+        <item>Alwar</item>
+        <item>Banswara</item>
+        <item>Barmer</item>
+        <item>Bharatpur</item>
+        <item>Bhilwara</item>
+        <item>Bikaner</item>
+        <item>Chittorgarh</item>
+        <item>Churu</item>
+        <item>Dausa</item>
+        <item>Ganganagar</item>
+        <item>Jaipur</item>
+        <item>Jaipur Rural</item>
+        <item>Jalore</item>
+        <item>Jhalawar</item>
+        <item>Jhunjhunu</item>
+        <item>Jodhpur</item>
+        <item>Karauli Dholpur</item>
+        <item>Kota</item>
+        <item>Nagaur</item>
+        <item>Pali</item>
+        <item>Rajsamand</item>
+        <item>Sikar</item>
+        <item>Tonk Sawai Madhopur</item>
+        <item>Udaipur</item>
+    </string-array>
+    <string name="title_activity_referral">Referral Accounts</string>
+    <string name="title_activity_leap_member_list">संपर्क करें</string>
+    <string name="title_activity_verify_leap_accounts_new">लीप खातों को सत्यापित करें</string>
+    <string name="title_activity_videos_list">वीडियो</string>
+    <string name="title_activity_leap">Leap</string>
+    <string name="title_activity_leap_add_member__step1">लीप सदस्य पंजीकरण</string>
+    <string name="title_activity_leap_add_member__select_picture">तस्वीर क्लिक करें</string>
+    <string name="title_activity_leap_select_picture">तस्वीर क्लिक करे</string>
+    <string name="title_activity_leap_add_member_step2">लीप सदस्य पंजीकरण</string>
+    <string name="title_activity_referral_home">अलख रेफरल</string>
+    <string name="title_activity_pay_membership_fee">सदस्यता शुल्क भुगतान</string>
+    <string name="title_activity_referral_list">सृजित खातों की सूची</string>
+
+    <string name="restart">Restart the App</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+
+
+</resources>

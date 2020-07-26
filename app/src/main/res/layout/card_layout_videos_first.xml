@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_View="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    android:id="@+id/card_view"
+    card_View:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/videos_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/videos_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_below="@+id/videos_thumbnail"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/productfont"/>
+
+        <TextView
+            android:id="@+id/videos_description"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0.8"
+            android:layout_below="@+id/videos_title"
+            android:text="This is some description of the Video"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:theme="@style/productfont"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/videos_title"
+            android:background="#f0f0f0">
+
+            <LinearLayout
+                android:id="@+id/videos_shareLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="#f5f5f5">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/sharenew" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="वीडियो को शेयर करें"
+                    android:theme="@style/productfont"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/videos_contactLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#f5f5f5"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/whatsapp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="हमसे संपर्क करें"
+                    android:theme="@style/productfont"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/videos_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/videoicon"
+            android:layout_alignBottom="@+id/videos_thumbnail"/>
+
+        <TextView
+            android:id="@+id/videos_url_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:theme="@style/productfont"/>
+        <TextView
+            android:id="@+id/videos_isvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

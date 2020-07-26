@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        app:cardElevation="0dp"
+        android:id="@+id/videos_card">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/videos_thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="7"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/videos_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lesson 1: Intro to Algebra"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/videos_thumbnail"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:theme="@style/productfont"/>
+
+        <TextView
+            android:id="@+id/videos_description"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/videos_title"
+            android:layout_toRightOf="@+id/videos_thumbnail"
+            android:text="This is some description of the Video"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:theme="@style/productfont"/>
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/videos_category"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#00004d"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignEnd="@+id/videos_thumbnail"-->
+            <!--android:textColor="#fff"-->
+            <!--android:gravity="end"-->
+            <!--android:theme="@style/productfont"-->
+            <!--android:layout_marginTop="20dp" />-->
+
+        <ImageView
+            android:id="@+id/videos_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/videoicon"
+            android:layout_alignBottom="@+id/videos_thumbnail"/>
+
+        <TextView
+            android:id="@+id/videos_url_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/videos_isvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/videos_card"
+        android:background="#f0f0f0">
+
+        <LinearLayout
+            android:id="@+id/videos_shareLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#f5f5f5"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sharenew" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="वीडियो को शेयर करें"
+                android:theme="@style/productfont"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/videos_contactLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#f5f5f5"
+            android:layout_marginLeft="5dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/whatsapp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="हमसे संपर्क करें"
+                android:theme="@style/productfont"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

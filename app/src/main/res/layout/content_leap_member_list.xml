@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LeapMemberList"
+    android:background="#f5f5f5"
+    tools:showIn="@layout/activity_leap_member_list">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin_contact_card"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#128c7e"
+            android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/admin_alakh_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="अलख व्यवस्थापक से संपर्क करें"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/admin_alakh_text"
+                android:id="@+id/temp_list">
+
+            <ImageView
+                android:id="@+id/list_member_image"
+                android:layout_width="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alakhroundwhite"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="अलख व्यवस्थापक"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/list_member_image"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/list_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91-6375509117"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:layout_below="@+id/list_name"
+                android:layout_toRightOf="@+id/list_member_image"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <ImageView
+                android:contentDescription="WhatsappLogo"
+                android:id="@+id/list_whatsapp"
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/whatsapp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/admin_contact_card"
+        android:id="@+id/leap_listLL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:text="आपके द्वारा बनाए गए लीप सदस्यों से सम्पर्क करें"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/list_shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_list_leap_members"/>
+                <include layout="@layout/shimmer_list_leap_members"/>
+                <include layout="@layout/shimmer_list_leap_members"/>
+                <include layout="@layout/shimmer_list_leap_members"/>
+                <include layout="@layout/shimmer_list_leap_members"/>
+
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_recyclerView"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

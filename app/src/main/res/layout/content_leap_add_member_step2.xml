@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LeapAddMemberStep2"
+    tools:showIn="@layout/activity_leap_add_member_step2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/step2_member_image_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:id="@+id/step2_mobile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_member_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Your Mobile Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="20dp"
+                app:boxStrokeColor="@color/colorPrimary"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@id/step2_mobile_tv">
+
+                <EditText
+                    android:id="@+id/nameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:padding="20dp"
+                    android:hint="नाम दर्ज करें"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addressTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="20dp"
+                app:boxStrokeColor="@color/colorPrimary"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@id/nameTIL"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/addressET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:padding="20dp"
+                    android:hint="पता दर्ज करें"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/cityTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="20dp"
+                app:boxStrokeColor="@color/colorPrimary"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@id/addressTIL"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/cityET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:padding="20dp"
+                    android:hint="शहर का नाम दर्ज करें"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ownerTIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginLeft="20dp"
+                app:boxStrokeColor="@color/colorPrimary"
+                android:layout_marginRight="20dp"
+                android:textColorHint="@color/colorPrimary"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@id/cityTIL"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/ownerET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColor="#000"
+                    android:padding="20dp"
+                    android:hint="व्यवसाय दर्ज करें"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submitBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ownerTIL"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedcorner"
+                android:text="रजिस्टर करें"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/step2_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ownerTIL"
+                android:layout_centerHorizontal="true"
+                android:outlineAmbientShadowColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/step2_text_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_below="@+id/step2_progress_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

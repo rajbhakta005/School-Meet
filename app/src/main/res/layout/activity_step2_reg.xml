@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step2Reg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/backbg_reg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#02001a"
+                android:contentDescription="Just an Image" />
+
+            <ImageView
+                android:id="@+id/step2_back_button_image_reg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/backicon" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/step2_member_image_view_reg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp" />
+
+            <TextView
+                android:id="@+id/step2_mobile_tv_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_member_image_view_reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Your Mobile Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/step2_english_tv_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_mobile_tv_reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="कृपया केवल अंग्रेजी में फॉर्म भरें - "
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/step2_name_card_view_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step2_english_tv_reg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/mobile_text_hindi_reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/backbg_reg"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="अपना पूरा नाम लिखे"
+                        android:textAlignment="center"
+                        android:textColor="#02001a"
+                        android:textSize="25sp"
+                        android:theme="@style/productfont" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/namecolor" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorPrimary">
+
+                            <EditText
+                                android:id="@+id/step2_name_et_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="अपना पूरा नाम दर्ज करें"
+                                android:inputType="textCapWords"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="22sp"
+                                android:theme="@style/productfont" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/step2_address_card_view_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step2_english_tv_reg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/address_text_hindi_reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/backbg_reg"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="अपना पूरा पता लिखे"
+                        android:textAlignment="center"
+                        android:textColor="#02001a"
+                        android:textSize="25sp"
+                        android:theme="@style/productfont" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/addresscolor" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorPrimary">
+
+                            <EditText
+                                android:id="@+id/step2_address_et_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="अपना पता दर्ज करें"
+                                android:inputType="textCapWords"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="22sp"
+                                android:theme="@style/productfont" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/citycolor" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorPrimary">
+
+                            <EditText
+                                android:id="@+id/step2_city_et_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                android:hint="अपना शहर दर्ज करें"
+                                android:inputType="textCapWords"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimary"
+                                android:textSize="22sp"
+                                android:theme="@style/productfont" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/step2_assembly_card_view_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step2_english_tv_reg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/assembly_text_hindi_reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/backbg_reg"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="अपने लोकसभा और विधान सभा क्षेत्र का चयन करें"
+                        android:textAlignment="center"
+                        android:textColor="#02001a"
+                        android:textSize="25sp"
+                        android:theme="@style/productfont" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner1_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/colorPrimary"
+                        android:entries="@array/lok_sabha"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:spinnerMode="dialog" />
+
+                    <Spinner
+                        android:id="@+id/spinner2_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimary"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:foregroundTint="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:spinnerMode="dialog" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/step2_occuption_card_view_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step2_english_tv_reg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/occupation_text_hindi_reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/backbg_reg"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="आप वर्तमान में क्या करते हैं"
+                        android:textAlignment="center"
+                        android:textColor="#02001a"
+                        android:textSize="25sp"
+                        android:theme="@style/productfont" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/occupation_op1_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="किसान/पशुपालन"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/occupation_op2_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="उद्योग"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/occupation_op3_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="दुकानदार"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/occupation_op4_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="हाट/थड़ी/ठेला"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/occupation_op5_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="नौकरी"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/occupation_op6_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="बेरोजगार/गृहणी"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/occupation_op7_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="श्रमिक/कारीगर"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/occupation_op8_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="दस्तकार/शिल्पकार"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/occupation_op11_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="पेशेवर"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/occupation_op12_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="राजनीतिज्ञ/समाज सेवी"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/occupation_op9_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="ड्राईवर"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/occupation_op10_reg"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/roundedless"
+                                android:text="कोई अन्य"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/step2_occupation_et_reg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="कृपया अपना वर्तमान व्यवसाय दर्ज करें"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimary"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:visibility="gone"-->
+                <!--android:id="@+id/step2_pgp_options_card_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/step2_english_tv_reg"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--app:cardBackgroundColor="#fff"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/slect_two_option_text_hindi_reg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:text="पीपल्स ग्रीन पार्टी के अलख जगाओ कार्यक्रम में निम्न मुद्दों पर राजनैतिक / सामाजिक आंदोलन में शामिल होकर संघर्ष करना है। - "-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="#02001a"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op1_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="राजनीति एवं समाज सेवा"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op2_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="बढ़ती जनसंख्या की रोकथाम"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op3_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="नयी खेती समृद्ध किसान"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op4_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="युवा आंत्रेप्रेन्योर"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op5_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="महिलाओ को बराबरी"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op6_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="हर बेघर को निशुल्क आवास"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_pgp_op7_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="जल एवं पर्यावरण रक्षा"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:foregroundTint="@color/white"/>-->
+
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="30dp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:checked="true"-->
+                        <!--android:editable="false"-->
+                        <!--android:enabled="false"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:text="मैं पीपल्स ग्रीन पार्टी की सदस्यता स्वीकार करता हू"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textSize="22sp" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:id="@+id/step2_asangathit_condition_card_view_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/step2_english_tv"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:cardBackgroundColor="#fff"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/asangathi_cond_text_hindi_reg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:text="पीपल्स ग्रीन असंगठित श्रमिक यूनियन की किसी इकाई से जुड़ना चाहते है ?"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="#02001a"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<Button-->
+                                <!--android:id="@+id/asangathit_condition_op1_reg"-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginRight="5dp"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:background="@drawable/roundedless"-->
+                                <!--android:text="हाँ"-->
+                                <!--android:textColor="@color/white"-->
+                                <!--android:textSize="18sp" />-->
+
+                            <!--<Button-->
+                                <!--android:id="@+id/asangathit_condition_op2_reg"-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginLeft="5dp"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:background="@drawable/roundedless"-->
+                                <!--android:text="अभी नहीं"-->
+                                <!--android:textColor="@color/white"-->
+                                <!--android:textSize="18sp" />-->
+                        <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:id="@+id/step2_asangathit_options_card_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/step2_english_tv_reg"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:cardBackgroundColor="#fff"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/asangathit_text_hindi_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:background="@drawable/roundedless"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:text="असंगठित श्रमिक यूनियन "-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="27sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/step2_radio_group_five_reg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_thirty_one_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="राजस्थान वाहन चालक संगठन"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_thirty_two_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="राजस्थान डिलीवरी लायंस"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_thirty_four_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="इ-रिक्शा श्रमिक यूनियन"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_thirty_five_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="हाट कारोबारी यूनियन"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+
+                        <!--</RadioGroup>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_asangathit_checkbox_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:checked="true"-->
+                        <!--android:enabled="false"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:text="मैं असंगठित श्रमिक यूनियन का सदस्य बनना चाहता हूं"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textSize="22sp" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:id="@+id/step2_entrepreneurship_options_card_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/step2_english_tv_reg"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:cardBackgroundColor="#fff"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/entrep_text_hindi_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:background="@drawable/roundedless"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:text="आंत्रेप्रेन्योर क्रान्ति"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="27sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/slect_four_option_text_hindi_reg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:text="निम्न में से किसी एक विकल्प को चुनें"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="#02001a"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/step2_radio_group_four_reg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_nine_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="सस्ती दुकान"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_ten_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="माइक्रो फाइनेंस फॉर SHG"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_eleven_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="स्टार्ट अप्स"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                        <!--</RadioGroup>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<CheckBox-->
+                        <!--android:id="@+id/step2_entrepreneurship_checkbox_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="30dp"-->
+                        <!--android:buttonTint="@color/colorPrimary"-->
+                        <!--android:checked="true"-->
+                        <!--android:enabled="false"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:text="मैं आंत्रेप्रेन्योर क्रान्ति का सदस्य बनना चाहता हूं"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:textSize="22sp" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:id="@+id/step2_second_last_options_card_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/step2_english_tv_reg"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:cardBackgroundColor="#fff"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/secondlast_text_hindi_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:background="@drawable/roundedless"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:text="पीपल्स ग्रीन आन्दोलन का तात्पर्य व्यक्तियों का सशक्तिकरण हैं। आप भी इसमें लाभ ले सकते हैं।"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="27sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/slect_secondlast_option_text_hindi_reg"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:text="यह हर उस कर्मठ साथी के लिए है जो सपने देखता है और कल को आज से बेहतर बनाने के लिए अडिग है।\n\nसही विकल्प चुनें-"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="#02001a"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/step2_radio_group_six_reg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_fiftyone_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="मुझे खुद का नया व्यवसाय स्थापित करना है।"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_fiftytwo_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="मेरे स्वयं के व्यवसाय को आगे बढ़ाना है।"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_fiftythree_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="मुझे दक्षता प्राप्त कर आत्म-निर्भर बनना है।"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                        <!--</RadioGroup>-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:id="@+id/step2_last_options_card_reg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/step2_english_tv_reg"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:cardBackgroundColor="#fff"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/last_text_hindi_reg"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/backbg_reg"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:layout_marginBottom="20dp"-->
+                        <!--android:background="@drawable/roundedless"-->
+                        <!--android:paddingTop="10dp"-->
+                        <!--android:paddingBottom="10dp"-->
+                        <!--android:text="हम आपकी सहायता करेंगे, इनमें से किस क्षेत्र में आपका रुझान है -"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="27sp"-->
+                        <!--android:theme="@style/productfont" />-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<RadioGroup-->
+                            <!--android:id="@+id/step2_radio_group_seven_reg"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_sixtyone_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="नयी खेती, पशुपालन से सम्बंधित"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_sixtytwo_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="हेंडीक्राफ्ट व उत्पादन से सम्बंधित"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/step2_radio_option_sixtythree_reg"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginTop="10dp"-->
+                                <!--android:buttonTint="@color/colorPrimary"-->
+                                <!--android:text="दुकान, दक्षता व सर्विस आदि से सम्बंधित"-->
+                                <!--android:textColor="@color/colorPrimary"-->
+                                <!--android:textSize="22sp" />-->
+
+                        <!--</RadioGroup>-->
+
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</androidx.cardview.widget.CardView>-->
+
+            <Button
+                android:id="@+id/fab_step2_name_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_name_card_view_reg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedless"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/productfont"
+                app:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/fab_step2_address_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_address_card_view_reg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedless"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/productfont"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/next" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/fab_step2_address_back_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_address_card_view_reg"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/roundedless"
+                android:drawableLeft="@drawable/backwhite"
+                android:textAllCaps="false"
+                android:text="Back"
+                android:textSize="20sp"
+                android:theme="@style/productfont"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/backwhite"/>
+
+            <Button
+                android:id="@+id/fab_step2_ward_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_assembly_card_view_reg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedless"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/productfont"
+                android:visibility="gone"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/next" />
+
+            <Button
+                android:id="@+id/fab_step2_occupation_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_occuption_card_view_reg"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedless"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:theme="@style/productfont"
+                android:visibility="gone"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/next" />
+
+
+            <!--<Button-->
+                <!--android:id="@+id/fab_step2_pgp_reg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/step2_pgp_options_card_reg"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@drawable/roundedless"-->
+                <!--android:drawableRight="@drawable/next"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="Next"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:theme="@style/productfont"-->
+                <!--android:visibility="gone"-->
+                <!--app:backgroundTint="@color/colorPrimary"-->
+                <!--app:srcCompat="@drawable/next" />-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/fab_step2_asangathit_reg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/step2_asangathit_options_card_reg"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@drawable/roundedless"-->
+                <!--android:drawableRight="@drawable/next"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="Next"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:theme="@style/productfont"-->
+                <!--android:visibility="gone"-->
+                <!--app:backgroundTint="@color/colorPrimary"-->
+                <!--app:srcCompat="@drawable/next" />-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/roundedless"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_below="@+id/step2_asangathit_options_card"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="स्किप"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:theme="@style/productfont"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingRight="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingLeft="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/fab_step2_asangathit_skip"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:backgroundTint="@color/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:srcCompat="@drawable/next"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="20dp"/>&ndash;&gt;-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/fab_step2_entrepreneurship_reg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/step2_entrepreneurship_options_card_reg"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@drawable/roundedless"-->
+                <!--android:drawableRight="@drawable/next"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="Next"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:theme="@style/productfont"-->
+                <!--android:visibility="gone"-->
+                <!--app:backgroundTint="@color/colorPrimary"-->
+                <!--app:srcCompat="@drawable/next" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/fab_step2_entrepreneurship_skip_reg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/step2_entrepreneurship_options_card_reg"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@drawable/roundedless"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="स्किप"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:theme="@style/productfont"-->
+                <!--android:visibility="gone"-->
+                <!--app:backgroundTint="@color/colorPrimary"-->
+                <!--app:srcCompat="@drawable/next" />-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/fab_step2_secondlast_reg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/step2_second_last_options_card_reg"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@drawable/roundedless"-->
+                <!--android:drawableRight="@drawable/next"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="Next"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:theme="@style/productfont"-->
+                <!--android:visibility="gone"-->
+                <!--app:backgroundTint="@color/colorPrimary"-->
+                <!--app:srcCompat="@drawable/next" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/fab_step2_secondlast_skip_reg"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/step2_second_last_options_card_reg"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="@drawable/roundedless"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingRight="20dp"-->
+                <!--android:text="स्किप"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="20sp"-->
+                <!--android:theme="@style/productfont"-->
+                <!--android:visibility="gone"-->
+                <!--app:backgroundTint="@color/colorPrimary"-->
+                <!--app:srcCompat="@drawable/next" />-->
+
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/referralTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="अपने रेफरी की आईडी दर्ज करें"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_below="@id/step2_english_tv_reg"
+                />
+            <Button
+                android:id="@+id/fab_step2_final_submit_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/referralTV"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedless"
+                android:drawableRight="@drawable/submitcolor"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="फार्म जमा करें    "
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="22sp"
+                android:theme="@style/productfont"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/next" />
+
+            <ProgressBar
+                android:id="@+id/step2_progress_bar_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_english_tv_reg"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/step2_text_percentage_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step2_progress_bar_reg"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/colorPrimary"
+                android:theme="@style/productfont"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

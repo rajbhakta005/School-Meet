@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddMember"
+    tools:showIn="@layout/activity_add_member">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/add_member_image_view"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/add_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="पूरा नाम"
+                        android:inputType="textCapWords"
+                        android:theme="@style/productfont"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/add_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="मोबाइल"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:theme="@style/productfont"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/add_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="शहर"
+                            android:inputType="textCapWords"
+                            android:theme="@style/productfont"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/add_occupation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="रोजगार"
+                            android:inputType="textCapWords"
+                            android:theme="@style/productfont"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/add_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="पता"
+                            android:inputType="textCapWords"
+                            android:theme="@style/productfont"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/add_ward"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="वार्ड"
+                            android:inputType="textCapWords"
+                            android:theme="@style/productfont"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/add_assembly"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="सभा"
+                            android:inputType="textCapWords"
+                            android:theme="@style/productfont"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/add_submit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="जमा करें"
+                        android:padding="20dp"
+                        android:theme="@style/productfont"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/roundedcorner"
+                        android:textColor="#fff"/>
+
+
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/add_progress_bar"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/add_text_percentage"
+                        android:layout_marginBottom="30dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
